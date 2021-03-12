@@ -1,7 +1,7 @@
 # Lab 4
 
 
-## Compulsory (1p)
+## Compulsory(1p)
 
 ```
 (done)Create an object-oriented model of the problem. You should have at least the following classes: Student, School and the main class.
