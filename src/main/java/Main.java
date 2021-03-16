@@ -14,19 +14,19 @@ public class Main {
         schools[1].setCapacity(2);
         schools[2].setCapacity(2);
 
-        LinkedList<Student> studentLinkedList=new LinkedList<Student>();
-        studentLinkedList.add(students[0]);
-        studentLinkedList.addFirst(students[1]);
-        studentLinkedList.addLast(students[2]);
-        studentLinkedList.add(2, students[3]);
+        LinkedList<Student> studentsLinkedList=new LinkedList<Student>();
+        studentsLinkedList.add(students[0]);
+        studentsLinkedList.addFirst(students[1]);
+        studentsLinkedList.addLast(students[2]);
+        studentsLinkedList.add(2, students[3]);
         
         List<Student> sortedStudentList = new LinkedList<>();
         sortedStudentList.sort(Comparator.comparing(Student::getName));
 
-        TreeSet<School> treeSetOfSchools = new TreeSet<>();
-        treeSetOfSchools.add(schools[2]);
-        treeSetOfSchools.add(schools[0]);
-        treeSetOfSchools.add(schools[1]);
+        TreeSet<School> treeSetOfSchool = new TreeSet<>();
+        treeSetOfSchool.add(schools[2]);
+        treeSetOfSchool.add(schools[0]);
+        treeSetOfSchool.add(schools[1]);
 
         Map<Student, List<School>> studentsPreferences = new HashMap();
         studentsPreferences.put(students[0],Arrays.asList(schools[0],schools[1],schools[2]));
