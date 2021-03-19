@@ -1,4 +1,4 @@
-package school;
+package compulsory.shool;
 
 import java.util.Objects;
 

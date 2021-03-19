@@ -1,4 +1,4 @@
-package student;
+package compulsory.student;
 
 import java.util.Comparator;
 import java.util.Objects;

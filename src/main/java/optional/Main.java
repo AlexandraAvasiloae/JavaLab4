@@ -59,8 +59,8 @@ public class Main {
             System.out.println("\n");
         }
 
-        //Using Java Stream API, write queries that display the students who find acceptable a given list of schools, and the schools that have a given student as their top preference.
-        System.out.println("The list of acceptable school for " + students[0].getName() + " is " + p1.getListOfAcceptableSchools(students[0].getName()));
+        //Using Java Stream API, write queries that display the students who find acceptable a given list of schools, and the schools that have a given compulsory.student as their top preference.
+        System.out.println("The list of acceptable compulsory.school for " + students[0].getName() + " is " + p1.getListOfAcceptableSchools(students[0].getName()));
         System.out.println("\n");
         System.out.println(schools[0].getName() + "'s favorite stundet is " + p1.getFavoriteStudent(schools[0].getName()));
         System.out.println("\n");
