@@ -14,9 +14,21 @@ public class Main {
         schools[1].setCapacity(2);
         schools[2].setCapacity(2);
 
-        LinkedList<Student> studentLinkedList=new LinkedList<Student>();
+
+        LinkedList<Student> studentsLinkedList=new LinkedList<Student>();
+        studentsLinkedList.add(students[0]);
+        studentsLinkedList.addFirst(students[1]);
+        studentsLinkedList.addLast(students[2]);
+        studentsLinkedList.add(2, students[3]);
 
         List<Student> sortedStudentList = new LinkedList<>();
+        sortedStudentList.sort(Comparator.comparing(Student::getName));
+
+        TreeSet<School> treeSetOfSchools = new TreeSet<>();
+        treeSetOfSchools.add(schools[2]);
+        treeSetOfSchools.add(schools[0]);
+        treeSetOfSchools.add(schools[1]);
+        List<Student> studentLinkedList = new LinkedList<>();
         sortedStudentList.sort(Comparator.comparing(Student::getName));
 
 
